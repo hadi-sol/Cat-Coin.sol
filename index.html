@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cat Coin - Crypto Revolution</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #2c3e50;
+            color: #ecf0f1;
+        }
+
+        a {
+            color: #3498db;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: #2980b9;
+        }
+
+        /* Header */
+        header {
+            background-color: #f39c12;
+            padding: 15px 20px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 20px;
+        }
+
+        .cta-button {
+            background-color: #00bfa5;
+            color: #2c3e50;
+            padding: 10px 20px;
+            border-radius: 25px;
+            cursor: pointer;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #f39c12, #e67e22);
+            text-align: center;
+            padding: 80px 20px;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+        }
+
+        /* About Section */
+        .about, .tokens, .team, .contact {
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .about, .team {
+            background-color: #34495e;
+        }
+
+        .tokens {
+            background-color: #16a085;
+        }
+
+        .contact {
+            background-color: #2c3e50;
+        }
+
+        h2 {
+            color: #f39c12;
+            font-size: 36px;
+        }
+
+        /* Tokens Section */
+        .token-list {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .token {
+            background-color: #2c3e50;
+            color: #f39c12;
+            padding: 20px;
+            border-radius: 10px;
+            width: 280px;
+        }
+
+        /* Team Section */
+        .team-members {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .member {
+            background-color: #2c3e50;
+            color: #f39c12;
+            padding: 20px;
+            border-radius: 10px;
+            width: 220px;
+            text-align: center;
+        }
+
+        /* Contact Form */
+        .contact form {
+            max-width: 600px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .contact input, .contact textarea {
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #f39c12;
+        }
+
+        .contact button {
+            background-color: #00bfa5;
+            color: #2c3e50;
+            padding: 10px 20px;
+            border-radius: 25px;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #f39c12;
+            text-align: center;
+            padding: 10px;
+        }
+
+        .social-links {
+            margin-top: 10px;
+        }
+
+        .social-links a {
+            margin: 0 10px;
+            color: #2c3e50;
+        }
+
+        /* Scroll-to-Top Button */
+        #scroll-to-top {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #00bfa5;
+            color: #2c3e50;
+            border: none;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            font-size: 20px;
+            cursor: pointer;
+            display: none;
+        }
+
+        /* Dark Mode */
+        .dark-mode {
+            background-color: #2c3e50;
+            color: #ecf0f1;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="nav">
+            <div class="logo">Cat Coin</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#tokens">Tokens</a></li>
+                <li><a href="#team">Team</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button class="cta-button" id="theme-toggle">Toggle Dark Mode</button>
+        </div>
+    </header>
+
+    <section id="home" class="hero">
+        <h1>Revolutionize Your Crypto Journey</h1>
+        <p>Join Cat Coin to experience the future of decentralized finance.</p>
+    </section>
+
+    <section id="about" class="about">
+        <h2>About Cat Coin</h2>
+        <p>We are passionate about driving innovation in the blockchain space. Cat Coin is your gateway to decentralized opportunities.</p>
+    </section>
+
+    <section id="tokens" class="tokens">
+        <h2>Our Tokens</h2>
+        <div class="token-list">
+            <div class="token">
+                <h3>Basic Token</h3>
+                <p>Perfect for new investors exploring crypto.</p>
+            </div>
+            <div class="token">
+                <h3>Advanced Token</h3>
+                <p>Enhanced features for experienced users.</p>
+            </div>
+            <div class="token">
+                <h3>Premium Token</h3>
+                <p>Maximum benefits for top-tier investors.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="team" class="team">
+        <h2>Our Team</h2>
+        <div class="team-members">
+            <div class="member">
+                <h3>Jane Doe</h3>
+                <p>CEO</p>
+            </div>
+            <div class="member">
+                <h3>John Smith</h3>
+                <p>CTO</p>
+            </div>
+            <div class="member">
+                <h3>Emily Johnson</h3>
+                <p>Marketing Lead</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" rows="4" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Cat Coin. All Rights Reserved.</p>
+        <div class="social-links">
+            <a href="#">Twitter</a>
+            <a href="#">Facebook</a>
+            <a href="#">Instagram</a>
+        </div>
+    </footer>
+
+    <button id="scroll-to-top">↑</button>
+
+    <script>
+        // Scroll-to-top button
+        const scrollToTopButton = document.getElementById('scroll-to-top');
+        window.addEventListener('scroll', () => {
+            scrollToTopButton.style.display = window.scrollY > 300 ? 'block' : 'none';
+        });
+        scrollToTopButton.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+
+        // Dark mode toggle
+        document.getElementById('theme-toggle').addEventListener('click', () => {
+            document.body.classList.toggle('dark-mode');
+        });
+
+        // Smooth scrolling
+        document.querySelectorAll('.nav-links a').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.getElementById(this.getAttribute('href').substring(1)).scrollIntoView({ behavior: 'smooth' });
+            });
+        });
+    </script>
+</body>
+</html>
